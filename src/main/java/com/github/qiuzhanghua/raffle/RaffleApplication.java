@@ -58,6 +58,7 @@ public class RaffleApplication {
           writer.print((char) 27 + "[2J");   // clear screen
           writer.print((char) 27 + "[0;0H"); // move to top/left
           int random = r.nextInt(max) + 1;
+          while (result.contains(random)) random = r.nextInt(max) + 1;
 //    random = 291;  //test
           int c = random % 10;
           int t = ((random - c) / 10) % 10;
