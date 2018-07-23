@@ -6,7 +6,6 @@
 ```bash
  mvn -Pnexus package -DskipTests
 ```
-一定要用-DskipTests参数，否则单元测试会锁住屏幕，做单元测试前注释掉appRunner。
 
 ```bash
 java -jar target/raffle-0.0.1-SNAPSHOT.jar --raffle.left-spaces=15 --raffle.count=500
